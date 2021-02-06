@@ -30,11 +30,13 @@ export default defineComponent({
   margin-top: 60px;
 }
 
-.bg-gradient {
-  @apply bg-gradient-to-r from-purple-400 via-pink-500 to-red-400;
-}
+@layer components {
+  .bg-gradient {
+    @apply bg-gradient-to-r from-purple-400 via-pink-500 to-red-400;
+  }
 
-.custom-button {
-  @apply bg-gradient-to-r from-green-400 to-blue-500 focus:from-pink-500 focus:to-yellow-500 rounded;
+  .custom-button {
+    @apply bg-gradient-to-r from-green-400 to-blue-500 focus:from-pink-500 focus:to-yellow-500 rounded;
+  }
 }
 </style>
